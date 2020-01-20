@@ -4,11 +4,14 @@ import {HomePage} from './pages/homepage/homepage.component'
 import {Switch, Route} from 'react-router-dom'; //(1)
 
 import ShopPage from '././pages/shop/shop.component'
+import Header from './component/header/header.component';
 
-
+/* by putting <Header/> above "switch" and "Route" => it will be shown 
+in all pages as fixed */
 function App() {
   return (
     <div>
+      <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
