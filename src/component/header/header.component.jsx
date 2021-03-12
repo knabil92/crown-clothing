@@ -15,7 +15,7 @@ const Header = () => (
 
     <div className='options'>
       <Link className='option' to='/shop'>
-        SHOP
+        SHOPP
       </Link>
       <Link className='option' to='/shop'>
         CONTACT
